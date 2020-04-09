@@ -4,20 +4,25 @@ Hey, today im gonna tell you how to create a distribution.json for the following
 - **Helios Launcher**
 
 ## Requirements
+You need to have NodeJS, Java and npm:
+###### Java:
+![](https://i.imgur.com/VQZoYWq.png)
 
-You can easily create a **distribution.json** , but you need a Linux Machine as:
+##### For Windows:
+Install NodeJS using the legacy installer (nodejs.org)
 
-- A *VPS*
-- A Linux *Computer*
-- A *virtual machine*
+![](https://i.imgur.com/NjiTQax.png)
 
 
-And if you don't have a Linux Machine, well you can follow this step-by-step guide to create a Virtual Linux Machine.
-- [Guide](https://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox)
+##### For MacOS:
+Install HomeBrew and run: 
+``brew install node``
+Then sit back and relax x)
 
-You also need Java, npm and NodeJS:
+##### For Linux:
 To install them type:
 ``apt install nodejs default-jdk npm -y ``
+
 
 ## 1st step: Clone the repository.
 
