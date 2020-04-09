@@ -26,7 +26,7 @@ To create a modded distribution.json (distro.json), you need to clone the Nebula
 ``git clone https://github.com/dscalzi/Nebula.git  ``
 (Note: if you don't have git then do **``apt install git``**)
 Theb 
-## 2st step: Install Dependencies.
+## 2st step: Install Dependencies and Build .
 To install dependencies, you need to execute ``npm i``  in the repository's directory.
 
 
@@ -71,3 +71,6 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 
 
 ![Diagram Mermaid](https://i.imgur.com/OmsIoe5.png)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM4MTk5NjIzOV19
+-->
