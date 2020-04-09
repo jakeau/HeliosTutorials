@@ -2,4 +2,4 @@
 
 Here are the different tutorials.
 
-[a relative link](CreateNebulaDistro.md)
+[How to Create a Distribution.json With Nebula (EN)](CreateNebulaDistro.md)
