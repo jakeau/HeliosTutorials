@@ -70,12 +70,4 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 ## Diagram
 
 
-
-```mermaid
-graph LR
-A[Nebula] -- Base_URL RootDir JavaPath--> B((Server))
-C(Distibution.json)
-B --> D{Mods}
-D --> C
-C --> E{WebServer}
-```
+![Diagram Mermaid](https://i.imgur.com/OmsIoe5.png)
