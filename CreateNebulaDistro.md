@@ -22,13 +22,12 @@ To install them type:
 ## 1st step: Clone the repository.
 
 
-To create a modded distribution.json (distro.json), you need to clone the Nebula repository.
+To begin, you need to clone the Nebula repository.
 ``git clone https://github.com/dscalzi/Nebula.git  ``
 (Note: if you don't have git then do **``apt install git``**)
-Theb 
-## 2st step: Install Dependencies.
+## 2st step: Install Dependencies and Build Nebula.
 To install dependencies, you need to execute ``npm i``  in the repository's directory.
-
+and to build Nebula, simply type ``npm build`` in the same directory. 
 
 ## 3st step:   .env Creation
 
