@@ -38,7 +38,8 @@ and to build Nebula, simply type ``npm run build`` in the same directory.
 
 
 ## 3st step:   .env Creation
-
+Windows)
+type ``echo %PATH%
 Execute ``whereis java`` and note the given PATH.
 To make Nebula work properly, you need to create a file that is named .env 
 Once you've created it type in this. You will need to fill it.
@@ -79,5 +80,6 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 
 ![Diagram Mermaid](https://i.imgur.com/OmsIoe5.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTMxMzAwMiw3MzI3NjA1ODNdfQ==
+eyJoaXN0b3J5IjpbLTEwMDcwNzIzNzYsLTEwOTMxMzAwMiw3Mz
+I3NjA1ODNdfQ==
 -->
