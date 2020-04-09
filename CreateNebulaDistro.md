@@ -25,9 +25,12 @@ To install them type:
 To begin, you need to clone the Nebula repository.
 ``git clone https://github.com/dscalzi/Nebula.git  ``
 (Note: if you don't have git then do **``apt install git``**)
+
+
 ## 2st step: Install Dependencies and Build Nebula.
 To install dependencies, you need to execute ``npm i``  in the repository's directory.
-and to build Nebula, simply type ``npm build`` in the same directory. 
+and to build Nebula, simply type ``npm run build`` in the same directory. 
+
 
 ## 3st step:   .env Creation
 
