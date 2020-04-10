@@ -59,8 +59,9 @@ BASE_URL=Fill in with the URL that you want to have your files on (exemple: file
 ### Forge:
 
 To create a modded distribution.json (distro.json), you need to create a modded server, to do that: run this command while in the nebula directory:
-`` generate server <ServerName> <MCServerVersion> --forge <ForgeSpecificVersion>``
+`` node dist/index.js generate server <ServerName> <MCServerVersion> --forge <ForgeSpecificVersion>``
 (Note: *you don't have to type the brackets <>*)
+(Note x2: *if you receive an error 
 ### Vanilla:
 Well it's a little bit different that the Forge server. You've only got to remove the --forge
 So you need to execute this command while in the nebula directory:
@@ -86,6 +87,6 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 
 ![Diagram Mermaid](https://i.imgur.com/OmsIoe5.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjk3NTQ3ODMsLTE5MjczODYxMTAsLT
-EwOTMxMzAwMiw3MzI3NjA1ODNdfQ==
+eyJoaXN0b3J5IjpbMTE5MDU0MDA5NywtMTkyNzM4NjExMCwtMT
+A5MzEzMDAyLDczMjc2MDU4M119
 -->
