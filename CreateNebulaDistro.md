@@ -29,8 +29,12 @@ To install them type:
 
 To begin, you need to clone the Nebula repository.
 ``git clone https://github.com/dscalzi/Nebula.git  ``
+Linux)
 (Note: if you don't have git then do **``apt install git``**)
-
+Windows)
+(Note: if you don't have git then install Git Bash)
+Windows)
+(Note: if you don't have git then install Git Bash)
 
 ## 2st step: Install Dependencies and Build Nebula.
 To install dependencies, you need to execute ``npm i``  in the repository's directory.
@@ -83,3 +87,6 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 ### Credits: 
 @dscalzi: for Nebula and Helios Launcher.
 @SuperZooka: for figuring out how to run it on Windows/MacOS
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTUyOTU5MjgyNl19
+-->
