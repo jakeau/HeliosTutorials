@@ -27,11 +27,11 @@ Pour installez les programmes, exécutez ces commandes dans un terminal:
 Pour commencer, vous avez besoin d'avoir Nebula sur votre machine:
 ``git clone https://github.com/dscalzi/Nebula.git  ``
 Linux)
-(Note: if you don't have git then do **``apt install git``**)
+(Note: si vous avez pas git exécutez cette commande:  **``apt install git``**)
 Windows)
-(Note: if you don't have git then install Git Bash)
+(Note:  si vous avez pas git installez Git Bash)
 Windows)
-(Note: if you don't have git then install Git using HomeBrew (``brew install git``)
+(Note:si vous avez pas git installez Git en utilisant Homebrew  (``brew install git``)
 
 ## 2st step: Install Dependencies and Build Nebula.
 To install dependencies, you need to execute ``npm i``  in the repository's directory.
@@ -86,5 +86,5 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 @SuperZooka: for figuring out how to run it on Windows/MacOS
 The 11/04/2020 is my birthday.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUwMDYxNzQ1XX0=
+eyJoaXN0b3J5IjpbMzU3MTg5ODQ0LDk1MDA2MTc0NV19
 -->
