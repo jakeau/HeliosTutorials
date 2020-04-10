@@ -38,7 +38,7 @@ Windows)
 
 ## 2st step: Install Dependencies and Build Nebula.
 To install dependencies, you need to execute ``npm i``  in the repository's directory.
-and to build Nebula, simply type ``npm run build`` in the same directory. 
+and to build Nebula, simply execute ``npm build ./ `` and `` npm run build`` in the same directory. 
 
 
 ## 3st step:   .env Creation
@@ -88,5 +88,5 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 @dscalzi: for Nebula and Helios Launcher.
 @SuperZooka: for figuring out how to run it on Windows/MacOS
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyOTU5MjgyNl19
+eyJoaXN0b3J5IjpbLTQxMDEwNTA4MF19
 -->
