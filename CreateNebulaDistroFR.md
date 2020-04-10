@@ -19,21 +19,19 @@ Installez HomeBrew et exécutez:
 
 
 ##### Pour Linux:
-Pour installez les p
+Pour installez les programmes, exécutez ces commandes dans un terminal:
 ``apt install nodejs default-jdk npm -y ``
 
 
-## 1st step: Clone the repository.
-
-
-To begin, you need to clone the Nebula repository.
+## 1st step: Cloner le répo.
+Pour commencer, vous avez besoin d'avoir Nebula sur votre machine:
 ``git clone https://github.com/dscalzi/Nebula.git  ``
 Linux)
 (Note: if you don't have git then do **``apt install git``**)
 Windows)
 (Note: if you don't have git then install Git Bash)
 Windows)
-(Note: if you don't have git then install Git Bash)
+(Note: if you don't have git then install Git using HomeBrew (``brew install git``)
 
 ## 2st step: Install Dependencies and Build Nebula.
 To install dependencies, you need to execute ``npm i``  in the repository's directory.
@@ -88,5 +86,5 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 @SuperZooka: for figuring out how to run it on Windows/MacOS
 The 11/04/2020 is my birthday.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTExMTkzMV19
+eyJoaXN0b3J5IjpbOTUwMDYxNzQ1XX0=
 -->
