@@ -46,7 +46,8 @@ Execute ``whereis java`` and note the given PATH.
 To make Nebula work properly, you need to create a file that is named .env 
 Once you've created it type in this. You will need to fill it.
 
-MacOS
+MacOS)
+It's a little bit more difficult, you need to see if any of these paths belongs to your Java installation: [PATHS](https://alvinalexander.com/java/mac-os-x-java_home-location/)
 ```
 JAVA_EXECUTABLE=Fill in with the Java PATH
 ROOT=Somewhere
@@ -56,6 +57,7 @@ BASE_URL=Fill in with the URL that you want to have your files on (exemple: file
 ## 4st step: Create a server
 
 ### Forge:
+
 To create a modded distribution.json (distro.json), you need to create a modded server, to do that: run this command while in the nebula directory:
 `` generate server <ServerName> <MCServerVersion> --forge <ForgeSpecificVersion>``
 (Note: *you don't have to type the brackets <>*)
@@ -84,6 +86,6 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 
 ![Diagram Mermaid](https://i.imgur.com/OmsIoe5.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwODYyODc0LC0xOTI3Mzg2MTEwLC0xMD
-kzMTMwMDIsNzMyNzYwNTgzXX0=
+eyJoaXN0b3J5IjpbLTE4Mjk3NTQ3ODMsLTE5MjczODYxMTAsLT
+EwOTMxMzAwMiw3MzI3NjA1ODNdfQ==
 -->
