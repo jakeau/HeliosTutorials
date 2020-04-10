@@ -2,24 +2,24 @@
 Salut, aujourd'hui je vais vous apprendre comment créer une distribution.json pour ces applications:
 - **Helios Launcher**
 
-## Requirements
-You need to have NodeJS, Java and npm:
+## Exigences
+Vous avez besoin de Java, NodeJS et NPM.-
 ###### Java:
 ![](https://i.imgur.com/VQZoYWq.png)
 
-##### For Windows:
-Install NodeJS using the legacy installer (nodejs.org)
+##### Pour Windows:
+Installez NodeJS en utilisant l'installeur officiel (nodejs.org)
 
 ![](https://i.imgur.com/NjiTQax.png)
 
 
-##### For MacOS:
-Install HomeBrew and run: 
+##### Pour MacOS:
+Installez HomeBrew et exécutez:
 ``brew install node``
-Then sit back and relax x)
 
-##### For Linux:
-To install them type:
+
+##### Pour Linux:
+Pour installez les p
 ``apt install nodejs default-jdk npm -y ``
 
 
@@ -88,5 +88,5 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 @SuperZooka: for figuring out how to run it on Windows/MacOS
 The 11/04/2020 is my birthday.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzE2Njc1MTldfQ==
+eyJoaXN0b3J5IjpbMTM2MTExMTkzMV19
 -->
