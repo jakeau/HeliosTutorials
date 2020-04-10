@@ -87,6 +87,4 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 ### Credits: 
 @dscalzi: for Nebula and Helios Launcher.
 @SuperZooka: for figuring out how to run it on Windows/MacOS
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMDEwNTA4MF19
--->
+The 11/04/2020 is my birthday.
