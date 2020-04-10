@@ -56,22 +56,16 @@ BASE_URL=Fill in with the URL that you want to have your files on (exemple: file
 
 ## 4st step: Create a server
 
-### Forge:
-
 To create a modded distribution.json (distro.json), you need to create a modded server, to do that: run this command while in the nebula directory:
 `` node dist/index.js generate server <ServerName> <MCServerVersion> --forge <ForgeSpecificVersion>``
 (Note: *you don't have to type the brackets <>*)
-(Note x2: *if you receive an error 
-### Vanilla:
-Well it's a little bit different that the Forge server. You've only got to remove the --forge
-So you need to execute this command while in the nebula directory:
-`` generate server <ServerName> <MCServerVersion>``
-## Optional: Put in your files (forge)
+(Note x2: *if you receive an error try doing ``npm run build``*)
+## 5st step:  Put in your files 
 To start putting in your mods, go to ``servers/<YourServerID>``.
 Go to ``forgemods``, and put in  your mods (*try to have no special characters in your mods' name*). 
 ##### Optional: Put your flans mod, in the flans folder and if there is some mods that require folders in the minecraft root directory, put them in there.
 
-## 5st and last step: Creating the distribution.json.
+## 6st and last step: Creating the distribution.json.
 
 Once you've finished all of this, you actually need to create the distribution.json file.
 Todo so, execute this command while in Nebula's root directory.
@@ -87,6 +81,6 @@ Now that all of your files are ready, just go to app/assets/js/distromanager.js.
 
 ![Diagram Mermaid](https://i.imgur.com/OmsIoe5.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MDU0MDA5NywtMTkyNzM4NjExMCwtMT
+eyJoaXN0b3J5IjpbLTgxNTU1Njc0NSwtMTkyNzM4NjExMCwtMT
 A5MzEzMDAyLDczMjc2MDU4M119
 -->
