@@ -27,10 +27,10 @@ Pour installez les programmes, exécutez ces commandes dans un terminal:
 ## 1ère Étape: Cloner le répo.
 Pour commencer, vous avez besoin d'avoir Nebula sur votre machine:
 ``git clone https://github.com/dscalzi/Nebula.git  ``
-Linux)
-(NB pour les utilisateurs linux: si vous avez pas Git exécutez cette commande:  **``apt install git``**)
+Linux)\
+(NB pour les utilisateurs linux: si vous avez pas Git exécutez cette commande:  **``apt install git``**)\
 (NB pour les utilisateurs windows: si vous avez pas encore Git installez Git Bash)
-Windows)
+Windows)\
 (NB pour les utilisateurs MacOS :si vous avez pas encore Git installez le en utilisant Homebrew  (``brew install git``)
 
 ---
@@ -49,6 +49,7 @@ Sur Windows et Linux :
 Taper ``where java`` sur Windows ou ``whereis java`` sur Linux dans n'importe quel terminal puis noter le chemin donner.
 
 Sur MacOS :
+
 C'est un petit peu compliquer car il vous faudra chercher dans le path à la main : [PATHS](https://alvinalexander.com/java/mac-os-x-java_home-location/)
 ```ini
 JAVA_EXECUTABLE=Fill in with the Java PATH
@@ -61,26 +62,22 @@ BASE_URL=Completer avec l'url du serveur ou les fichiers du launcher seront hebe
 ## 4ème Étape : Ajout du/des serveur(s)
 
 Dans votre fichier de distribution , vous devez créer ajouter au minimum 1 serveur, pour cela exécutez cette commande dans le répertoire de Nebula :
-`` node dist/index.js generate server <nom du serveur> <version de minecraft> --forge <version de forge>``
-(NB: *vous n'avez pas à mettre les chevrons <>*)
-(NB: *si vous avez une erreur, retaper cette commande avant ``npm run build``*)
+`` node dist/index.js generate server <nom du serveur> <version de minecraft> --forge <version de forge>`` \
+(NB: *vous n'avez pas à mettre les chevrons <>*)\
+(NB: *si vous avez une erreur, retaper cette commande avant ``npm run build``*)\
 (NB: Repeter autant de fois que cous avez de serveurs/versions)
 
 ---
 
 ## 5ème Étape:  Ajouter vos fichiers
-Ajouter vos fichiers dans ``servers/<YourServerID>``. Ce dossier en contiens 2 essentiels, files et forgemods.
-Pour ajouter des mods forge, deposer les fichiers jar dans ``forgemods``
-Le dossier ``files`` agit comme le dossier ``.minecraft`` Si vous voulez un configuration Minecraft par defaut n'y toucher pas mais si vous voulez y inclure vos propres fichiers de configuration/shaders/dependance de mod (comme pour flans) ce sera ici.
+Ajouter vos fichiers dans ``servers/<YourServerID>``. Ce dossier en contiens 2 essentiels, files et forgemods. Pour ajouter des mods forge, deposer les fichiers jar dans ``forgemods`` Le dossier ``files`` agit comme le dossier ``.minecraft`` Si vous voulez un configuration Minecraft par defaut n'y toucher pas mais si vous voulez y inclure vos propres fichiers de configuration/shaders/dependance de mod (comme pour flans) ce sera ici.
 
 ---
 
 ## 6ème et dernière étape: Generer vos fichiers ! 
 
-Une fois que vous avez terminé tout cela, vous devez générer vos fichiers.
-Pour ce faire, exécutez cette commande dans le répertoire racine de Nebula.
-`generate distro`
-Suivant la version de forge (notamants les plus récentes) il faudra suivre les diverses instruction dans le terminal.
+Une fois que vous avez terminé tout cela, vous devez générer vos fichiers. Pour ce faire, exécutez cette commande dans le répertoire racine de Nebula. `generate distro` \
+Suivant la version de forge (notamants les plus récentes) il faudra suivre les diverses eventuelles instructions dans le terminal. \
 Ding ! Vos fichiers sont pret ! Cependant vous aurez encore besoin de modifier l'adresse ip de votre serveur ou d'autre information tel que l'url du feed rss de vos news dans le fichier ``distribution.json`` Il vous suffira ensuite d'uploader votre dossier ``ROOT`` à votre ``BASE_URL``.
 
 ---
@@ -99,8 +96,8 @@ Il vous suffit d'aller dans  app/assets/js/distromanager.js. Aller à la ligne 5
 
 ### Credits
 
-@dscalzi: Developpeur principal d'Helios Launcher
-@Superkooka: Les differents changement pour MacOS/Windows ainsi que la traduction française
+@dscalzi: Developpeur principal d'Helios Launcher \
+@Superkooka: Les differents changement pour MacOS/Windows ainsi que la traduction française \
 Le 11/04/2020 est mon anniversaire !
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMzU3MTg5ODQ0LDk1MDA2MTc0NV19
