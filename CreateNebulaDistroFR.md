@@ -2,7 +2,7 @@
 Salut, aujourd'hui je vais vous apprendre comment créer une distribution.json pour ces applications:
 - **Helios Launcher**
 
-## Exigences
+## Pré-Requis
 Vous avez besoin de Java, NodeJS et NPM.-
 ###### Java:
 ![](https://i.imgur.com/VQZoYWq.png)
@@ -35,7 +35,7 @@ Windows)
 
 ---
 
-## Deuxième Étape: Installer les dépendances et build Nebula.
+## 2ème Étape: Installer les dépendances et build Nebula.
 Pour installer les dépendances vous aurez besoin d'avoir un terminal ouvert dans le dossier de Nebula puis executer ``npm i`` dans celui-çi en atendant bien la fin ! Pour build Nebula il vous suffirat de lancer `` npm run build`` toujours dans le même dossier.
 
 ---
@@ -58,12 +58,13 @@ BASE_URL=Completer avec l'url du serveur ou les fichiers du launcher seront hebe
 
 ---
 
-## 4ème Étape
+## 4ème Étape : Ajout du/des serveur(s)
 
-Dans voyee fichier de distribution , vous devez créer ajouter au minimum 1 serveur, pour cela exécutez cette commande dans le répertoire de Nebula :
+Dans votre fichier de distribution , vous devez créer ajouter au minimum 1 serveur, pour cela exécutez cette commande dans le répertoire de Nebula :
 `` node dist/index.js generate server <nom du serveur> <version de minecraft> --forge <version de forge>``
-(Note: *vous n'avez pas à mettre les chevrons <>*)
-(Note x2: *si vous avez une erreur, retaper cette commande avant ``npm run build``*)
+(NB: *vous n'avez pas à mettre les chevrons <>*)
+(NB: *si vous avez une erreur, retaper cette commande avant ``npm run build``*)
+(NB: Repeter autant de fois que cous avez de serveurs/versions)
 
 ---
 
