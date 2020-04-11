@@ -22,69 +22,85 @@ Installez HomeBrew et exécutez:
 Pour installez les programmes, exécutez ces commandes dans un terminal:
 ``apt install nodejs default-jdk npm -y ``
 
+---
 
-## 1st step: Cloner le répo.
+## 1ère Étape: Cloner le répo.
 Pour commencer, vous avez besoin d'avoir Nebula sur votre machine:
 ``git clone https://github.com/dscalzi/Nebula.git  ``
 Linux)
-(Note: si vous avez pas git exécutez cette commande:  **``apt install git``**)
+(NB pour les utilisateurs linux: si vous avez pas Git exécutez cette commande:  **``apt install git``**)
+(NB pour les utilisateurs windows: si vous avez pas encore Git installez Git Bash)
 Windows)
-(Note:  si vous avez pas git installez Git Bash)
-Windows)
-(Note:si vous avez pas git installez Git en utilisant Homebrew  (``brew install git``)
+(NB pour les utilisateurs MacOS :si vous avez pas encore Git installez le en utilisant Homebrew  (``brew install git``)
 
-## 2st step: Install Dependencies and Build Nebula.
-To install dependencies, you need to execute ``npm i``  in the repository's directory.
-and to build Nebula, simply execute ``npm build ./ `` and `` npm run build`` in the same directory. 
+---
 
+## Deuxième Étape: Installer les dépendances et build Nebula.
+Pour installer les dépendances vous aurez besoin d'avoir un terminal ouvert dans le dossier de Nebula puis executer ``npm i`` dans celui-çi en atendant bien la fin ! Pour build Nebula il vous suffirat de lancer `` npm run build`` toujours dans le même dossier.
 
-## 3st step:   .env Creation
-Windows)
-Type ``where java`` and execute it. Then note the given PATH.
+---
 
-Linux)
-Execute ``whereis java`` and note the given PATH.
-To make Nebula work properly, you need to create a file that is named .env 
-Once you've created it type in this. You will need to fill it.
+## 3éme Étape: Création du fichier d'environement
+Le fichier d'environement est un fichier de configuration qui va vous servir à préciser à Nebula certaines informations
 
-MacOS)
-It's a little bit more difficult, you need to see if any of these paths belongs to your Java installation: [PATHS](https://alvinalexander.com/java/mac-os-x-java_home-location/)
-```
+En premier lieu il va falloir trouver ou ce situe java. (Si vous connaisais déjà le path vous pouvez passer à l'étape juste après)
+
+Sur Windows et Linux : 
+Taper ``where java`` sur Windows ou ``whereis java`` sur Linux dans n'importe quel terminal puis noter le chemin donner.
+
+Sur MacOS :
+C'est un petit peu compliquer car il vous faudra chercher dans le path à la main : [PATHS](https://alvinalexander.com/java/mac-os-x-java_home-location/)
+```ini
 JAVA_EXECUTABLE=Fill in with the Java PATH
-ROOT=Somewhere
-BASE_URL=Fill in with the URL that you want to have your files on (exemple: files .dnsjs.ml/launcher) 
+ROOT=Votre dossier ou vous voulez générer vos fichier (courament distribution)
+BASE_URL=Completer avec l'url du serveur ou les fichiers du launcher seront hebergés  (exemple: files .dnsjs.ml/launcher) 
 ```
 
-## 4st step: Create a server
+---
 
-To create a modded distribution.json (distro.json), you need to create a modded server, to do that: run this command while in the nebula directory:
-`` node dist/index.js generate server <ServerName> <MCServerVersion> --forge <ForgeSpecificVersion>``
-(Note: *you don't have to type the brackets <>*)
-(Note x2: *if you receive an error try doing ``npm run build``*)
-## 5st step:  Put in your files 
-To start putting in your mods, go to ``servers/<YourServerID>``.
-Go to ``forgemods``, and put in  your mods (*try to have no special characters in your mods' name*). 
-##### Optional: Put your flans mod, in the flans folder and if there is some mods that require folders in the minecraft root directory, put them in there.
+## 4ème Étape
 
-## 6st and last step: Creating the distribution.json.
+Dans voyee fichier de distribution , vous devez créer ajouter au minimum 1 serveur, pour cela exécutez cette commande dans le répertoire de Nebula :
+`` node dist/index.js generate server <nom du serveur> <version de minecraft> --forge <version de forge>``
+(Note: *vous n'avez pas à mettre les chevrons <>*)
+(Note x2: *si vous avez une erreur, retaper cette commande avant ``npm run build``*)
 
-Once you've finished all of this, you actually need to create the distribution.json file.
-Todo so, execute this command while in Nebula's root directory.
+---
+
+## 5ème Étape:  Ajouter vos fichiers
+Ajouter vos fichiers dans ``servers/<YourServerID>``. Ce dossier en contiens 2 essentiels, files et forgemods.
+Pour ajouter des mods forge, deposer les fichiers jar dans ``forgemods``
+Le dossier ``files`` agit comme le dossier ``.minecraft`` Si vous voulez un configuration Minecraft par defaut n'y toucher pas mais si vous voulez y inclure vos propres fichiers de configuration/shaders/dependance de mod (comme pour flans) ce sera ici.
+
+---
+
+## 6ème et dernière étape: Generer vos fichiers ! 
+
+Une fois que vous avez terminé tout cela, vous devez générer vos fichiers.
+Pour ce faire, exécutez cette commande dans le répertoire racine de Nebula.
 `generate distro`
-Then you will get your distribution.json ready. You just need to put the new folders that Nebula generated in a webserver at the base url that you've specified in the .env.
-## Extra: How to Configure Your Distribution.json URL In Helios Launcher
+Suivant la version de forge (notamants les plus récentes) il faudra suivre les diverses instruction dans le terminal.
+Ding ! Vos fichiers sont pret ! Cependant vous aurez encore besoin de modifier l'adresse ip de votre serveur ou d'autre information tel que l'url du feed rss de vos news dans le fichier ``distribution.json`` Il vous suffira ensuite d'uploader votre dossier ``ROOT`` à votre ``BASE_URL``.
 
-Now that all of your files are ready, just go to app/assets/js/distromanager.js. Go to line 540 or nearby and you should see `const distroURL = 'X'` replace it with `const distroURL = 'YourDistroURL (example: launcher.dnsjs.ml/files/distibution.json)'`
+---
+
+## Extra: Comment configurer l'url de votre fichier de distribution modifier
+
+Il vous suffit d'aller dans  app/assets/js/distromanager.js. Aller à la ligne 540 et vous devriez voir `const distroURL = 'X'`. Remplacer maintenant par le lien vers votre fichier de distribution (exemple: launcher.dnsjs.ml/files/distibution.json``
 
 
-## Diagram
+---
+
+## Diagramme
 
 
 ![Diagram Mermaid](https://i.imgur.com/OmsIoe5.png)
-### Credits: 
-@dscalzi: for Nebula and Helios Launcher.
-@SuperZooka: for figuring out how to run it on Windows/MacOS
-The 11/04/2020 is my birthday.
+
+### Credits
+
+@dscalzi: Developpeur principal d'Helios Launcher
+@Superkooka: Les differents changement pour MacOS/Windows ainsi que la traduction française
+Le 11/04/2020 est mon anniversaire !
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMzU3MTg5ODQ0LDk1MDA2MTc0NV19
 -->
