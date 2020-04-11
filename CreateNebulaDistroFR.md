@@ -70,7 +70,7 @@ Dans votre fichier de distribution , vous devez créer ajouter au minimum 1 serv
 ---
 
 ## 5ème Étape:  Ajouter vos fichiers
-Ajouter vos fichiers dans ``servers/<YourServerID>``. Ce dossier en contiens 2 essentiels, files et forgemods. Pour ajouter des mods forge, deposer les fichiers jar dans ``forgemods`` Le dossier ``files`` agit comme le dossier ``.minecraft`` Si vous voulez un configuration Minecraft par defaut n'y toucher pas mais si vous voulez y inclure vos propres fichiers de configuration/shaders/dependance de mod (comme pour flans) ce sera ici.
+Ajouter vos fichiers dans ``servers/<L'IDduServeur>``. Ce dossier en contiens 2 essentiels, files et forgemods. Pour ajouter des mods forge, deposer les fichiers jar dans ``forgemods`` Le dossier ``files`` agit comme le dossier ``.minecraft`` Si vous voulez un configuration Minecraft par defaut n'y toucher pas mais si vous voulez y inclure vos propres fichiers de configuration/shaders/dependance de mod (comme pour flans) ce sera ici.
 
 ---
 
@@ -96,9 +96,7 @@ Il vous suffit d'aller dans  app/assets/js/distromanager.js. Aller à la ligne 5
 
 ### Credits
 
-@dscalzi: Developpeur principal d'Helios Launcher \
-@Superkooka: Les differents changement pour MacOS/Windows ainsi que la traduction française \
-Le 11/04/2020 est mon anniversaire !
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU3MTg5ODQ0LDk1MDA2MTc0NV19
--->
+[@dscalzi](https://github.com/dscalzi/): Developpeur principal d'Helios Launcher \
+[@Superkooka](https://github.com/SuperKooka/)
+: Les differents changement pour MacOS/Windows ainsi que la traduction française \
+[@DNSJS](https://github.com/DNSJS/): Guide original EN, supervision, administration, gestion et fondateur.
