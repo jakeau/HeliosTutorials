@@ -85,7 +85,7 @@ Ding ! Vos fichiers sont pret ! Cependant vous aurez encore besoin de modifier l
 
 ---
 
-## Extra: Comment configurer l'url de votre fichier de distribution modifier
+## Extra: Configuration de l'url de votre fichier de distribution
 
 Il vous suffit d'aller dans  app/assets/js/distromanager.js. Aller à la ligne 540 et vous devriez voir `const distroURL = 'X'`. Remplacer maintenant par le lien vers votre fichier de distribution (exemple: launcher.dnsjs.ml/files/distibution.json``
 
