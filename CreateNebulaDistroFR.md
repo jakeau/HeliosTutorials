@@ -47,7 +47,8 @@ En premier lieu il va falloir trouver ou ce situe java. (Si vous connaisais déj
  
 Taper ``where java`` sur Windows ou ``whereis java`` sur Linux dans n'importe quel terminal puis noter le chemin donner. Sur MacOS il va falloir aller directement chercher dans la variable d'environement [path](https://alvinalexander.com/java/mac-os-x-java_home-location/)
 
-Ensuite remplissez le fichier ``.env`` avec les bonnes informations
+Ensuite crée un fichier nommer ``.env`` dans nebula. Soit vous le crée manuelement soit dans votre terminal avec ``type nul > .env
+`` sur windows ou ``touch .env`` sur Linux remplissez le fichier ``.env`` avec les bonnes informations
 ```ini
 JAVA_EXECUTABLE=Remplecer avec le chemain noté précédement
 ROOT=Votre dossier ou vous voulez générer vos fichier (Exemple:  J:\Nebula\distribution)
@@ -59,6 +60,7 @@ BASE_URL=Completer avec l'url du serveur ou les fichiers du launcher seront hebe
 ## 4ème Étape : Ajout du/des serveur(s)
 
 Il faut tout d'abord preparer votre dossier ROOT qui va accueillir votre configuration. Une commande est là pour nous ``node dist/index.js init root``. Il faudra donc la lancer
+
 Dans votre fichier de distribution , vous devez créer ajouter au minimum 1 serveur, pour cela exécutez cette commande dans le répertoire de Nebula :
 `` node dist/index.js generate server <nom du serveur> <version de minecraft> --forge <version de forge>`` \
 (NB: *vous n'avez pas à mettre les chevrons ``<>``*) \
