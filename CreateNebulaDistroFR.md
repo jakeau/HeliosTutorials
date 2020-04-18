@@ -58,6 +58,7 @@ BASE_URL=Completer avec l'url du serveur ou les fichiers du launcher seront hebe
 
 ## 4ème Étape : Ajout du/des serveur(s)
 
+Il faut tout d'abord preparer votre dossier ROOT qui va accueillir votre configuration. Une commande est là pour nous ``node dist/index.js init root``. Il faudra donc la lancer
 Dans votre fichier de distribution , vous devez créer ajouter au minimum 1 serveur, pour cela exécutez cette commande dans le répertoire de Nebula :
 `` node dist/index.js generate server <nom du serveur> <version de minecraft> --forge <version de forge>`` \
 (NB: *vous n'avez pas à mettre les chevrons ``<>``*) \
