@@ -1,34 +1,37 @@
 # Comment créer une distribution.json pour Helios Launcher.
-Salut, aujourd'hui je vais vous apprendre comment créer une distribution.json pour ces applications:
-- **Helios Launcher**
+Salut, aujourd'hui je vais vous apprendre comment créer un fichier distribution.json pour le **Helios Launcher**
 
-## Information : Pour simplifier ce guide, notament pour les utilisateur Linux nous avons indiquer la démarche à suivre que pour apt, si vous n'avez un autre gestionaire de packet vous savez déjà ce que vous faîtes
+## Information : Pour simplifier ce guide, notament pour les utilisateur Linux nous avons indiqué la démarche à suivre uniquement pour apt, si vous n'avez un autre gestionaire de paquets vous devez sans doute connaître les commandes équivalentes.
 
 ## Pré-Requis
-Vous avez besoin de Java, NodeJS et NPM.
+Vous avez besoin de Java (8 de préférence), NodeJS 12 et NPM (Inclut dans NodeJS).
 
 ###### Java:
 ![](https://i.imgur.com/VQZoYWq.png)
 
 ##### Pour Windows:
-Installez [NodeJS](nodejs.org) en utilisant l'installeur officiel (npm est par default automatiquement installer, sinon vous le trouverer dans votre gestionnaire de paquet par default)
+Installez [NodeJS](nodejs.org) en utilisant l'installeur officiel. Npm devrait être installé automatiquement durant ce setup. Si ce n'est pas le cas, vérifiez que vous n'avez pas décoché quelques cases.
 
 ![](https://i.imgur.com/NjiTQax.png)
 
 
 ##### Pour MacOS:
-Installez HomeBrew et exécutez:
+Installez HomeBrew :
+``/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"``
+Et éxécutez :
 ``brew install node``
 
 
 ##### Pour Linux:
-Pour installez les programmes, exécutez ces commandes dans un terminal:
-``apt install nodejs default-jdk npm -y ``
+Pour installer les dépendances, Installez d'abord le repo NodeJS 12.x officiel grâce à cette commande :
+``curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -``
+``apt update``
+``apt install nodejs openjdk-8-jdk -y ``
 
 ---
 
-## 1ère Étape: Cloner le répo.
-_Si vous n'avez pas encore git (vous vivez dans une grotte ? 😛), il vous faudra l'installer? Pour ce faire si vous êtes sous Linux/MacOS vous pourez passer par votre gestionnaire de paquet habituelle. Pour Windows je vous conseille d'installer [Git Bash](https://gitforwindows.org/)_
+## 1ère Étape: Cloner le repo.
+_Si vous n'avez pas encore git (vous vivez dans une grotte ? 😛), il vous faudra l'installer. Pour se faire si vous êtes sous Linux/MacOS vous pourrez passer par votre gestionnaire de paquet habituel. Pour Windows je vous conseil d'installer [Git Bash](https://gitforwindows.org/)_
 
 Pour commencer, vous avez besoin d'avoir les sources de Nebula sur votre machine:
 ``git clone https://github.com/dscalzi/Nebula.git  ``
@@ -36,49 +39,49 @@ Pour commencer, vous avez besoin d'avoir les sources de Nebula sur votre machine
 ---
 
 ## 2ème Étape: Installer les dépendances et build Nebula.
-Pour installer les dépendances vous aurez besoin d'avoir un terminal ouvert dans le dossier de Nebula puis executer ``npm i`` dans celui-çi en atendant bien la fin ! Pour build Nebula il vous suffirat de lancer `` npm run build`` toujours dans le même dossier.
+Pour installer les dépendances vous aurez besoin d'avoir un terminal ouvert dans le dossier de Nebula puis exécuter ``npm i`` dans celui-çi en attendant bien la fin ! Pour build Nebula il vous suffira de lancer `` npm run build`` toujours dans le même dossier.
 
 ---
 
 ## 3éme Étape: Création du fichier d'environement
-Le fichier d'environement est un fichier de configuration qui va vous servir à préciser à Nebula certaines informations
+Le fichier d'environement (.env) est un fichier de configuration qui va vous servir à préciser à Nebula certaines informations
 
-En premier lieu il va falloir trouver ou ce situe java. (Si vous connaisais déjà le path vous pouvez passer à l'étape juste après)
+En premier lieu il va falloir trouver où ce situe java. (Si vous connaissez déjà le path vous pouvez passer à l'étape suivante)
  
-Taper ``where java`` sur Windows ou ``whereis java`` sur Linux dans n'importe quel terminal puis noter le chemin donner. Sur MacOS il va falloir aller directement chercher dans la variable d'environement [path](https://alvinalexander.com/java/mac-os-x-java_home-location/)
+Taper ``where java`` sur Windows ou ``whereis java`` sur Linux dans n'importe quel terminal puis notez le chemin donné. Sur MacOS il faudra directement chercher dans la variable d'environement [path](https://alvinalexander.com/java/mac-os-x-java_home-location/)
 
-Ensuite crée un fichier nommer ``.env`` dans nebula. Soit vous le crée manuelement soit dans votre terminal avec ``type nul > .env
+Ensuite on crée un fichier nommé ``.env`` dans Nebula. Sois vous le créez manuellement, sois depuis votre terminal avec ``type nul > .env
 `` sur windows ou ``touch .env`` sur Linux remplissez le fichier ``.env`` avec les bonnes informations
 ```ini
-JAVA_EXECUTABLE=Remplecer avec le chemain noté précédement
-ROOT=Votre dossier ou vous voulez générer vos fichier (Exemple:  J:\Nebula\distribution)
-BASE_URL=Completer avec l'url du serveur ou les fichiers du launcher seront hebergés  (exemple: http://files.dnsjs.ml/launcher/) 
+JAVA_EXECUTABLE=Remplecer avec le chemin java affiché précédemment (ou juste java si il y a uniquement le jdk sur votre machine.)
+ROOT=Votre dossier ou vous souhaitez générer vos fichier (Exemple:  J:\Nebula\distribution)
+BASE_URL=Completez avec l'url du serveur où les fichiers du launcher seront hébergés  (exemple: https://files.dnsjs.ml/launcher/) 
 ```
 
 ---
 
 ## 4ème Étape : Ajout du/des serveur(s)
 
-Il faut tout d'abord preparer votre dossier ROOT qui va accueillir votre configuration. Une commande est là pour nous ``node dist/index.js init root``. Il faudra donc la lancer
+Il faut tout d'abord préparer votre dossier ROOT qui va acceuillir votre configuration. Une commande est là pour nous ``node dist/index.js init root``. Il faudra donc l'éxecuter.
 
-Dans votre fichier de distribution , vous devez créer ajouter au minimum 1 serveur, pour cela exécutez cette commande dans le répertoire de Nebula :
+Dans votre fichier de distribution, vous devez créer | ajouter au minimum 1 serveur. Pour cela exécutez cette commande dans le répertoire de Nebula :
 `` node dist/index.js generate server <nom du serveur> <version de minecraft> --forge <version de forge>`` \
 (NB: *vous n'avez pas à mettre les chevrons ``<>``*) \
-(NB: *si vous avez une erreur, retaper cette commande avant ``npm run build``*) \
-(NB: Repeter autant de fois que cous avez de serveurs/versions)
+(NB: *si vous avez une erreur, retapez la commande suivante : ``npm run build`` puis réésayez*) \
+(NB: Répeter autant de fois que vous avez de serveurs/versions)
 
 ---
 
 ## 5ème Étape:  Ajouter vos fichiers
-Ajouter vos fichiers dans ``servers/<L'IDduServeur>``. Ce dossier contient 2 autres dossier essentielles, ``files`` et ``forgemods``. Pour ajouter des mods forge, deposer les fichiers jar dans ``forgemods`` Le dossier ``files`` agit comme le dossier ``.minecraft`` Si vous voulez un configuration Minecraft par defaut n'y toucher pas mais si vous voulez y inclure vos propres fichiers de configuration/shaders/dependance de mod (comme pour flans) ce sera ici.
+Ajoutez vos fichiers dans ``servers/<L'IDduServeur>``. Ce dossier contient 2 autres dossier essentiels, ``files`` et ``forgemods``. Pour ajouter des mods forge, déposez les fichiers jar dans ``forgemods`` Le dossier ``files`` agit comme le dossier ``.minecraft`` Si vous voulez une configuration Minecraft par défaut n'y touchez pas mais si vous souhaitez y inclure vos propres fichiers de configuration/shaders/dépendances de mod (comme pour flans) ce sera ici.
 
 ---
 
-## 6ème et dernière étape: Generer vos fichiers ! 
+## 6ème et dernière étape: Génerer vos fichiers ! 
 
 Une fois que vous avez terminé tout cela, vous devez générer vos fichiers. Pour ce faire, exécutez cette commande dans le répertoire racine de Nebula. `generate distro` \
-Suivant la version de forge (notamants les plus récentes) il faudra suivre les diverses eventuelles instructions dans le terminal. \
-Ding ! Vos fichiers sont pret ! Cependant vous aurez encore besoin de modifier l'adresse ip de votre serveur ou d'autre information tel que l'url du feed rss de vos news dans le fichier ``distribution.json`` Il vous suffira ensuite d'uploader votre dossier ``ROOT`` à votre ``BASE_URL``.
+Suivant la version de forge (notamment les plus récentes) il faudra suivre les éventuelles instructions dans le terminal. \
+Ding ! Vos fichiers sont prêts ! Cependant vous aurez encore besoin de modifier l'adresse ip de votre serveur ou d'autres informations tel que l'url du feed rss de vos news dans le fichier ``distribution.json`` Il vous suffira ensuite d'uploader votre dossier ``ROOT`` à votre ``BASE_URL``.
 
 ---
 
@@ -100,3 +103,4 @@ Il vous suffit d'aller dans  app/assets/js/distromanager.js. Aller à la ligne 5
 [@Superkooka](https://github.com/SuperKooka/)
 : Les differents changement pour MacOS/Windows ainsi que la traduction française \
 [@DNSJS](https://github.com/DNSJS/): Guide original EN, supervision, administration, gestion et fondateur.
+[@MichelBaie](https://github.com/MichelBaie/): Correction du texte et rajout d'informations.
