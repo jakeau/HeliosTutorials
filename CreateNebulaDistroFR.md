@@ -104,5 +104,4 @@ Il vous suffit d'aller dans  app/assets/js/distromanager.js. Aller à la ligne 5
 : Les differents changement pour MacOS/Windows ainsi que la traduction française \
 [@DNSJS](https://github.com/DNSJS/): Guide original EN, supervision, administration, gestion et fondateur.
 
----- Contributeurs -----
-[@MichelBaie](https://github.com/MichelBaie/): Correction du texte et rajout d'informations.
+Mercoi à tout nos contributeurs.
