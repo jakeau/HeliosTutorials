@@ -7,7 +7,8 @@ Linking it is a very simple step, you just need to connect to  using your GitHub
 ![](https://i.imgur.com/DfUUEtg.png)
 
 ### Installing the Travis app onto your repository.
-A window will promt asking you to setup your account: ![}
+A window will promt asking you to setup your account: ![](https://i.imgur.com/bIss4Rx.png)
+![](
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NTQyMDM1Nl19
+eyJoaXN0b3J5IjpbMjEzMTk2Nzg1NF19
 -->
