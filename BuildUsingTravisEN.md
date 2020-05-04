@@ -3,7 +3,7 @@ Hi guys, hope you're having a great moment, today we're gonna learn how to build
 
 ## 1st step: Connecting Travis to your GitHub account
 To start using Travis, you need to link it's API to your GitHub Repository.
-Linking it 
+Linking it is a very simple step, you just need to connect to [Travis](https://travis-ci.com/signin) using your GitHub account. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMTUwMTU0N119
+eyJoaXN0b3J5IjpbMTM3NTg3NDQ0NV19
 -->
