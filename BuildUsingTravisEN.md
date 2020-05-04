@@ -10,7 +10,8 @@ Linking it is a very simple step, you just need to connect to  using your GitHub
 A window will promt asking you to setup your account: ![](https://i.imgur.com/bIss4Rx.png)
 
 ![](https://imgur.com/download/6X2t5Dz)
-
+### Getting your GitHub Token.
+Visit [that link](https://github.com/settings/tokens) to get your token.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExOTc5OTE3Nl19
+eyJoaXN0b3J5IjpbMTcwOTIxNDAxMF19
 -->
