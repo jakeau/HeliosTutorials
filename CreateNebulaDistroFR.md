@@ -78,9 +78,9 @@ Ajoutezr vos fichiers dans ``servers/<L'IDduServeur>``. Ce dossier contient 2 au
 
 ## 6ème et dernière étape: Géenerer vos fichiers ! 
 
-Une fois que vous avez terminé tout cela, vous devez générer vos fichiers. Pour ce faire, exécutez cette commande dans le répertoire racine de Nebula. `generate distro` \
+Une fois que vous avez terminé tout cela, vous devez générer vos fichiers. Pour ce faire, exécutez cette commande dans le répertoire racine de Nebula. ``node dist/index.js generate distro``
 Suivant la version de forge (notammeants les plus récentes) il faudra suivre les édiverses eventuelles instructions dans le terminal. \
-Ding ! Vos fichiers sont prêtset ! Cependant vous aurez encore besoin de modifier l'adresse ip de votre serveur ou d'autres informations tel que l'url du feed rss de vos news dans le fichier ``distribution.json`` Il vous suffira ensuite d'uploader votre dossier ``ROOT`` à votre ``BASE_URL``.
+Ding ! Vos fichiers sont prêts ! Cependant vous aurez encore besoin de modifier l'adresse ip de votre serveur ou d'autres informations tel que l'url du feed rss de vos news dans le fichier ``distribution.json`` Il vous suffira ensuite d'uploader votre dossier ``ROOT`` à votre ``BASE_URL``.
 
 ---
 
