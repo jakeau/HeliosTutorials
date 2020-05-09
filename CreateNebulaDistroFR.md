@@ -21,12 +21,12 @@ E (npm est par default automatiquement installer, sinon vous le trouverer dans v
 
 
 ##### Pour MacOS:
-Installez HomeBrew et éexécutez :
-``la ore `` nstall ode``
+Installez HomeBrew et éxécutez :
+``homebrew intsall node``
 
 ##### Pour Linux:
 Pour installerz les dépendances, Installez d'abord le repo NodeJS 12.x officiel gr âce  ete ``curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -``
-``apt updatet
+``apt update``
 ``apt install nodejs openjdk-8-jdk -y ``
 
 ---
@@ -105,5 +105,5 @@ Il vous suffit d'aller dans  app/assets/js/distromanager.js. Aller à la ligne 5
 
 Mercoi à tout nos contributeurs.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNjE2ODA1OV19
+eyJoaXN0b3J5IjpbLTIxMzgwNzUxNzAsMjAxNjE2ODA1OV19
 -->
